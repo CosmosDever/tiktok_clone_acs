@@ -8,7 +8,7 @@ export const Music: React.FC<MusicProps> = ({ Musicname, Artist }) => {
     <div className="flex items-center w-[320px] xl:w-[450px] md:w-[600px] lg:w-[700px] justify-between ">
       <div>
         <div className="text-sm ">{Musicname}</div>
-        <div className="text-sm ">{Artist}</div>
+        <div className="text-sm animate-pulse">{Artist}</div>
       </div>
       <div className="animate-spin">
         <svg

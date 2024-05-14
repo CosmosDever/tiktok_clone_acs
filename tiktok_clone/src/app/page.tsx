@@ -30,10 +30,7 @@ export default function Home() {
     <div className="snap-y snap-mandatory  h-screen w-screen overflow-scroll overflow-x-hidden  bg-zinc-950">
       {videoData.map((video, index) => (
         <div className="snap-center m-20 flex items-center justify-center relative rounded-xl ">
-          <div
-            key={index}
-            className="snap-center relative items-center justify-center"
-          >
+          <div key={index} className="relative items-center justify-center">
             <Video url={video.urlKey} />
             <div className="absolute bottom-0 right-3">
               <Action_bar
