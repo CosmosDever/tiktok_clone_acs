@@ -25,23 +25,9 @@ export default function Home() {
       Artist: "HAHAHAHAHAH",
     },
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const newIndex = currentIndex === 0 ? 1 : 0;
-      setCurrentIndex(newIndex);
-    };
-
-    window.addEventListener("wheel", handleScroll);
-
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, [currentIndex]);
 
   return (
-    <div className="snap-y snap-mandatory  h-screen w-screen overflow-scroll bg-zinc-950">
+    <div className="snap-y snap-mandatory  h-screen w-screen overflow-scroll overflow-x-hidden  bg-zinc-950">
       {videoData.map((video, index) => (
         <div className="snap-center m-20 flex items-center justify-center relative rounded-xl ">
           <div
