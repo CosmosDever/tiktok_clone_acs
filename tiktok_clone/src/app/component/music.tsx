@@ -5,7 +5,7 @@ interface MusicProps {
 }
 export const Music: React.FC<MusicProps> = ({ Musicname, Artist }) => {
   return (
-    <div className="flex items-center w-[320px] xl:w-[450px] justify-between ">
+    <div className="flex items-center w-[320px] xl:w-[450px] md:w-[600px] lg:w-[700px] justify-between ">
       <div>
         <div className="text-sm ">{Musicname}</div>
         <div className="text-sm ">{Artist}</div>

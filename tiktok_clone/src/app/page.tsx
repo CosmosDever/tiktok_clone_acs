@@ -41,7 +41,7 @@ export default function Home() {
   }, [currentIndex]);
 
   return (
-    <div className="snap-y snap-mandatory flex flex-col h-screen w-screen overflow-scroll bg-zinc-950">
+    <div className="snap-y snap-mandatory  h-screen w-screen overflow-scroll bg-zinc-950">
       {videoData.map((video, index) => (
         <div className="snap-center m-20 flex items-center justify-center relative rounded-xl ">
           <div
